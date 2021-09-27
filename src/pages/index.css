@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+}
+
+.mainWrapper{
+
+}
+
+.navBarWrapper{
+    background-color: green;
+
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+    .navBarWrapper > nav{
+        display: flex;
+            align-items: center;
+            justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+.backgroundWrapper{
+    background-color: red;
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+
+.backgroundImage{
+    background-image: url('../images/one.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    display: flex;
+        align-items: center;
+    height: 100%;
+
+    position: fixed;
+        top: 0;
+        left: 0;
+    width: 100%;
+    z-index: -10;
+}
+    .testContent{
+        background-color: yellow;
+        outline: 1px solid white;
+        
+        margin: 0 auto;
+    }
+
+
+.bodyWrapper{
+    background-color: white;
+    display: flex;
+        flex-direction: column;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+    .bodyWrapper > div{
+        outline: 5px solid orange;
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .bodyContent{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        height: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        outline: 1px solid red;
+    }
+    .contactFormWrapper{
+        background-color: red;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+        height: 100%;
+    }
+
+    .footerWrapper{
+
+    }
+        .footerContent{
+            display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+        }
