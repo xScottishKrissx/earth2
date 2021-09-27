@@ -131,26 +131,17 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
+      Why is the css in the same file as in the markup?? Tilted.
       </h1>
+
       <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
+        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page update in real-time.{" "}
+        <span role="img" aria-label="Sunglasses smiley emoji"> 😎 </span>
       </p>
+
       <ul style={listStyles}>
         <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
+          <a style={linkStyle} href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`} >
             {docLink.text}
           </a>
         </li>
