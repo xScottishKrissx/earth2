@@ -3,7 +3,10 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "earth2",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp"
+  ],
   
 }
 ;
