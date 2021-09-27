@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {Link } from 'gatsby'
+
 import { StaticImage } from 'gatsby-plugin-image'
 // components
 import Layout from '../components/layout'
@@ -12,7 +12,7 @@ const IndexPage = () => {
       <p>I'm making this by following the Gatsby Tutorial.</p>
       <StaticImage 
         alt="earth2"
-        src="./images/main.jpeg"
+        src="https://images.pexels.com/photos/796206/pexels-photo-796206.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
       />
     </Layout>
 
