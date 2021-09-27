@@ -4,4 +4,6 @@ module.exports = {
     title: "earth2",
   },
   plugins: [],
-};
+  
+}
+;
