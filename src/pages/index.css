@@ -60,6 +60,11 @@ body{
             padding-right: 35px;
             padding-bottom: 12px;
             padding-top: 12px;
+            transition: 0.25s ease-in;
+        }
+        .navBarWrapper > nav > span:hover{
+            background-color: white;
+            color: #304152;
         }
 
 .backgroundWrapper{

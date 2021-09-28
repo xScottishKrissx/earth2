@@ -10,238 +10,504 @@ import purpleSpace from '../images/purpleSpace.jpg'
 
 import './index.css'
 
-const IndexPage = () => {
-  function submitForm (){
-    alert("Submit Form")
-  }
-  return (
-    <main className="mainWrapper" >
-
-    {/* <Layout pageTitle="Home Page">
-      <p  className={test}>I'm making this by following the Gatsby Tutorial.</p>
-      <StaticImage 
-        alt="earth2"
-        src="https://images.pexels.com/photos/796206/pexels-photo-796206.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-      />
-    </Layout> */}
-
-{/* Navbar */}
-    <div className="navBarWrapper">
-      <nav>
-        <h1>Earth 2</h1>
-        <span>Reserve Your Place</span>
-      </nav>
-    </div>
 
 
-{/* Fixed Image Area */}
-    <div className="backgroundWrapper">
-      <div className="backgroundImage"></div>
-      <span className="bannerText">endless possibilities</span>
-    </div>
 
 
-{/* Scrolly Overlap Bit */}
-    <div className="bodyWrapper">
+// const IndexPage = () => {
 
-      <div className="bodyContent">
 
-        <div className="bodyContentAbout">
-          <p>The Earth 2 project is about endless posibilities. It's about bold new horizons and opportunities for all mankind. Let's face it, Earth 1 had a good run but it's time to move on. Earth 2 will allow us to break free from the chains than bind us and launch us towards a brave new vision of what it means to be alive in the 22nd century and beyond.</p>
+//   function submitForm (){ alert("Submit Form") }
 
-        </div>
+
+//   return (
+
+//     <main className="mainWrapper" >
+
+//     {/* <Layout pageTitle="Home Page">
+//       <p  className={test}>I'm making this by following the Gatsby Tutorial.</p>
+//       <StaticImage 
+//         alt="earth2"
+//         src="https://images.pexels.com/photos/796206/pexels-photo-796206.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+//       />
+//     </Layout> */}
+
+// {/* Navbar */}
+//     <div className="navBarWrapper">
+//       <nav>
+//         <h1>Earth 2</h1>
+//         <span>Reserve Your Place</span>
+//       </nav>
+//     </div>
+
+
+// {/* Fixed Image Area */}
+//     <div className="backgroundWrapper">
+//       <div className="backgroundImage"></div>
+//       <span className="bannerText">endless possibilities</span>
+//     </div>
+
+
+// {/* Scrolly Overlap Bit */}
+//     <div className="bodyWrapper">
+
+//       <div className="bodyContent">
+
+//         <div className="bodyContentAbout">
+//           <p>The Earth 2 project is about endless posibilities. It's about bold new horizons and opportunities for all mankind. Let's face it, Earth 1 had a good run but it's time to move on. Earth 2 will allow us to break free from the chains than bind us and launch us towards a brave new vision of what it means to be alive in the 22nd century and beyond.</p>
+
+//         </div>
 
         
-        <div className="bodyContentImage" id="upperImage"><img src={eclipse} /></div>
+//         <div className="bodyContentImage" id="upperImage"><img src={eclipse} /></div>
 
-        <div className="bodyContentAbout">
-          <p>The first of us are already on the way and you can be a part of that too. Everyone on Earth 1 will be allocated a spot on the arks, but you can get access ahead of the curve by registering your interest now. All you need to do is act now because it's time to go. We need to leave. There isn't much time. Hurry.</p>
-        </div>
-
-
-        <div className="bodyContentImage" id="lowerImage"><img src={shuttle} /></div>
-
-        <div className="bodyContentLatest">
-          <h2>Latest News</h2>
-          <div className="latestNewsSquaresWrapper">
-
-            <div className="column"> 
-              <div>
-
-                <div className="column-image">              
-                  <img src={purpleSpace} /> 
-                  <span className="overlay">Overlay</span>
-                </div>
-
-                <span>Date</span>
-                <h3>Column Subtitle</h3>
-              </div>             
-            </div>
-
-            <div className="column" id="middleColumn"> 
-            <div>
-                <div className="column-image">              
-                  <img src={purpleSpace} /> 
-                  <span className="overlay">Overlay</span>
-                </div>
-
-                <span>Date</span>
-                <h3>Column Subtitle</h3>
-              </div>               
-            </div>
-
-            <div className="column"> 
-            <div>
-              <div className="column-image">                
-                <img src={purpleSpace} /> 
-                <span className="overlay">Overlay</span>
-              </div>
-
-              <span>Date</span>
-              <h3>Column Subtitle</h3>
-              </div>                
-            </div>
+//         <div className="bodyContentAbout">
+//           <p>The first of us are already on the way and you can be a part of that too. Everyone on Earth 1 will be allocated a spot on the arks, but you can get access ahead of the curve by registering your interest now. All you need to do is act now because it's time to go. We need to leave. There isn't much time. Hurry.</p>
+//         </div>
 
 
-          </div>
-          {/* <p>Load More +</p> */}
-        </div>
+//         <div className="bodyContentImage" id="lowerImage"><img src={shuttle} /></div>
+
+//         <div className="bodyContentLatest">
+//           <h2>Latest News</h2>
+//           <div className="latestNewsSquaresWrapper">
+
+//             <div className="column"> 
+//               <div>
+
+//                 <div className="column-image">              
+//                   <img src={purpleSpace} /> 
+//                   <span className="overlay">Overlay</span>
+//                 </div>
+
+//                 <span>Date</span>
+//                 <h3>Column Subtitle</h3>
+//               </div>             
+//             </div>
+
+//             <div className="column" id="middleColumn"> 
+//             <div>
+//                 <div className="column-image">              
+//                   <img src={purpleSpace} /> 
+//                   <span className="overlay">Overlay</span>
+//                 </div>
+
+//                 <span>Date</span>
+//                 <h3>Column Subtitle</h3>
+//               </div>               
+//             </div>
+
+//             <div className="column"> 
+//             <div>
+//               <div className="column-image">                
+//                 <img src={purpleSpace} /> 
+//                 <span className="overlay">Overlay</span>
+//               </div>
+
+//               <span>Date</span>
+//               <h3>Column Subtitle</h3>
+//               </div>                
+//             </div>
 
 
-        <div className="bodyContentHistory">
-          <div>
-            <h2>History of Earth 2</h2>
-            <p>After the event, the decision was made to relocate the entire human race to a new home. For a full history of that which we don't dare utter the words out loud, click the button below.</p>
-            <button>Read more</button>
-          </div>
-        </div>
+//           </div>
+//           {/* <p>Load More +</p> */}
+//         </div>
+
+
+//         <div className="bodyContentHistory">
+//           <div>
+//             <h2>History of Earth 2</h2>
+//             <p>After the event, the decision was made to relocate the entire human race to a new home. For a full history of that which we don't dare utter the words out loud, click the button below.</p>
+//             <button>Read more</button>
+//           </div>
+//         </div>
         
-      </div>
+//       </div>
 
 
 
 
-    </div>
+//     </div>
 
-    <div className="contactFormWrapper">
-      <div className="contactFormContent">
+//     <div className="contactFormWrapper">
+//       <div className="contactFormContent">
 
-        <div className="contactFormIntro">
-          <h1>Earth 2 Ark Registration</h1>
-          <p>Using this form you can confirm your interest in being a vital part of this exciting new adventure for the human race.</p>
-          <p>Just fill out the form and before long, adventure awaits.</p>
-        </div>
+//         <div className="contactFormIntro">
+//           <h1>Earth 2 Ark Registration</h1>
+//           <p>Using this form you can confirm your interest in being a vital part of this exciting new adventure for the human race.</p>
+//           <p>Just fill out the form and before long, adventure awaits.</p>
+//         </div>
 
-        <div className="contactForm">
+//         <div className="contactForm">
 
-          <form action={()=>submitForm()}>
+//           <form action={()=>submitForm()}>
 
-            <span className="contactFormInput">
-              <label for="firstName">First Name*</label>
-              <input type="text" id="firstName" name="firstName" placeholder="" required />
-            </span>
+//             <span className="contactFormInput">
+//               <label for="firstName">First Name*</label>
+//               <input type="text" id="firstName" name="firstName" placeholder="" required />
+//             </span>
 
-            <span className="contactFormInput">
-              <label for="lastName">Last Name*</label>
-              <input type="text" id="lastName" name="lastName" placeholder="" required />
-            </span>
+//             <span className="contactFormInput">
+//               <label for="lastName">Last Name*</label>
+//               <input type="text" id="lastName" name="lastName" placeholder="" required />
+//             </span>
 
-            <span className="contactFormInput">
-              <label for="hdn">Human Identity Number*</label>
-              <input type="text" id="hdn" name="hdn" placeholder="" required />
-            </span>
+//             <span className="contactFormInput">
+//               <label for="hdn">Human Identity Number*</label>
+//               <input type="text" id="hdn" name="hdn" placeholder="" required />
+//             </span>
 
-            <span className="contactFormInput">
-              <label for="livingZone">Living Zone*</label>
-              <input type="text" id="livingZone" name="livingZone" placeholder="" required />
-            </span>
+//             <span className="contactFormInput">
+//               <label for="livingZone">Living Zone*</label>
+//               <input type="text" id="livingZone" name="livingZone" placeholder="" required />
+//             </span>
 
-            <span className="contactFormInput">
-              <label for="eyeColour">Eye Colour*</label>            
-              <select id="eyeColour" name="eyeColour" placeholder="" required>
-                <option value=""> -- Select --</option>
-                <option value="Blue">Blue</option>
-                <option value="green">Green</option>
-                <option value="hazel">Hazel</option>
-                <option value="other">Other</option>
-              </select>
-            </span>
+//             <span className="contactFormInput">
+//               <label for="eyeColour">Eye Colour*</label>            
+//               <select id="eyeColour" name="eyeColour" placeholder="" required>
+//                 <option value=""> -- Select --</option>
+//                 <option value="Blue">Blue</option>
+//                 <option value="green">Green</option>
+//                 <option value="hazel">Hazel</option>
+//                 <option value="other">Other</option>
+//               </select>
+//             </span>
 
 
-            <div className="formCheckboxSection">
-              <p>Earth 2 Support Requirements</p>
+//             <div className="formCheckboxSection">
+//               <p>Earth 2 Support Requirements</p>
               
-              <div className="formCheckboxes">
-                <span>
-                  <input type="checkbox" id="housing" name="housing" /> 
-                  <label for="housing">Housing</label>
-                </span>
+//               <div className="formCheckboxes">
+//                 <span>
+//                   <input type="checkbox" id="housing" name="housing" /> 
+//                   <label for="housing">Housing</label>
+//                 </span>
                 
-                <span>
-                  <input type="checkbox" id="security" name="security"  /> 
-                  <label for="security">Security</label>
-                </span>
+//                 <span>
+//                   <input type="checkbox" id="security" name="security"  /> 
+//                   <label for="security">Security</label>
+//                 </span>
                 
-                <span>
-                  <input type="checkbox" id="employment" name="employment"  /> 
-                  <label for="employment">Employment</label>
-                </span>
+//                 <span>
+//                   <input type="checkbox" id="employment" name="employment"  /> 
+//                   <label for="employment">Employment</label>
+//                 </span>
                 
-                <span>
-                  <input type="checkbox" id="healthcare" name="healthcare"  /> 
-                  <label for="healthcare">Healthcare</label>
-                </span>
+//                 <span>
+//                   <input type="checkbox" id="healthcare" name="healthcare"  /> 
+//                   <label for="healthcare">Healthcare</label>
+//                 </span>
 
-                <span>
-                  <input type="checkbox" id="oxygen" name="oxygen"  /> 
-                  <label for="oxygen">Oxygen</label>
-                </span>
+//                 <span>
+//                   <input type="checkbox" id="oxygen" name="oxygen"  /> 
+//                   <label for="oxygen">Oxygen</label>
+//                 </span>
 
-              </div>
+//               </div>
 
-            </div>
+//             </div>
  
           
 
-          <p>You will be contacted directly by your local adminstration official in the event your application is approved</p>
-          <p>This form does not constitute a contract or promise of entry onto an Ark. Only suitable applicants matching certain criteria will be considered. Repeated failed applications will result in lowered credit score and reduced rations.</p>
+//           <p>You will be contacted directly by your local adminstration official in the event your application is approved</p>
+//           <p>This form does not constitute a contract or promise of entry onto an Ark. Only suitable applicants matching certain criteria will be considered. Repeated failed applications will result in lowered credit score and reduced rations.</p>
 
-          <div className="submitForm">
-            <span className="submitFormBtn">
-              <input type="submit" value="Submit" />
-            </span>
-          </div>
+//           <div className="submitForm">
+//             <span className="submitFormBtn">
+//               <input type="submit" value="Submit" />
+//             </span>
+//           </div>
 
-          <div className="formTerms">
-            <span id="terms">Terms &#38; Conditions</span>
-            <span>*Required Fields</span>
-          </div>
-          </form>
-        </div>
-      </div>
-      </div>
+//           <div className="formTerms">
+//             <span id="terms">Terms &#38; Conditions</span>
+//             <span>*Required Fields</span>
+//           </div>
+//           </form>
+//         </div>
+//       </div>
+//       </div>
       
 
-      <div className="footerWrapper">
-        <div className="footerContent">
+//       <div className="footerWrapper">
+//         <div className="footerContent">
           
-          <div id="footerLeft">
-            <h1>Earth 2</h1> 
-            <span>| a new adventure</span>
-          </div>
+//           <div id="footerLeft">
+//             <h1>Earth 2</h1> 
+//             <span>| a new adventure</span>
+//           </div>
 
-          <div id="footerRight">
-            <p>For more information: <br/> <span>earth2@human.gov</span></p>
-          </div>
+//           <div id="footerRight">
+//             <p>For more information: <br/> <span>earth2@human.gov</span></p>
+//           </div>
 
-        </div>
+//         </div>
 
         
-      </div>
-      <div className="footerBlock"></div>
-    </main>
-  )
+//       </div>
+//       <div className="footerBlock"></div>
+//     </main>
+//   )
+// }
+
+
+
+export class IndexPage extends React.Component {
+
+  constructor(props){
+      super(props);
+      this.state = {
+          showScrollToTopButton: false
+      }
+      window.addEventListener("scroll",this.scroll)
+  }
+
+  componentDidMount(){
+    window.addEventListener("scroll",this.scroll)
+  }
+  submitForm (){ alert("Submit Form") }
+  scroll = () => {
+    const windowHeight = "innerHeight" in window ? window.innerHeight : document.documentElement.offsetHeight;
+    const windowBottom = windowHeight + window.pageYOffset;
+    console.log(windowBottom)
+    // alert("Scroll")
+
+    this.setState({
+      scrollPos:windowBottom
+    })
+
+  }
+  render(){
+    console.log(this.state.scrollPos)
+      return (
+
+          <main className="mainWrapper" >
+      
+          {/* <Layout pageTitle="Home Page">
+            <p  className={test}>I'm making this by following the Gatsby Tutorial.</p>
+            <StaticImage 
+              alt="earth2"
+              src="https://images.pexels.com/photos/796206/pexels-photo-796206.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            />
+          </Layout> */}
+      
+      {/* Navbar */}
+          <div className="navBarWrapper">
+            <nav>
+              <h1>Earth 2</h1>
+              <span>Reserve Your Place</span>
+            </nav>
+          </div>
+      
+      
+      {/* Fixed Image Area */}
+          <div className="backgroundWrapper">
+            <div className="backgroundImage"></div>
+            <span className="bannerText">endless possibilities</span>
+          </div>
+      
+      
+      {/* Scrolly Overlap Bit */}
+          <div className="bodyWrapper">
+      
+            <div className="bodyContent">
+      
+              <div className="bodyContentAbout">
+                <p>The Earth 2 project is about endless posibilities. It's about bold new horizons and opportunities for all mankind. Let's face it, Earth 1 had a good run but it's time to move on. Earth 2 will allow us to break free from the chains than bind us and launch us towards a brave new vision of what it means to be alive in the 22nd century and beyond.</p>
+      
+              </div>
+      
+              
+              <div className="bodyContentImage" id="upperImage"><img src={eclipse} /></div>
+      
+              <div className="bodyContentAbout">
+                <p>The first of us are already on the way and you can be a part of that too. Everyone on Earth 1 will be allocated a spot on the arks, but you can get access ahead of the curve by registering your interest now. All you need to do is act now because it's time to go. We need to leave. There isn't much time. Hurry.</p>
+              </div>
+      
+      
+              <div className="bodyContentImage" id="lowerImage"><img src={shuttle} /></div>
+      
+              <div className="bodyContentLatest">
+                <h2>Latest News</h2>
+                <div className="latestNewsSquaresWrapper">
+      
+                  <div className="column"> 
+                    <div>
+      
+                      <div className="column-image">              
+                        <img src={purpleSpace} /> 
+                        <span className="overlay">Overlay</span>
+                      </div>
+      
+                      <span>Date</span>
+                      <h3>Column Subtitle</h3>
+                    </div>             
+                  </div>
+      
+                  <div className="column" id="middleColumn"> 
+                  <div>
+                      <div className="column-image">              
+                        <img src={purpleSpace} /> 
+                        <span className="overlay">Overlay</span>
+                      </div>
+      
+                      <span>Date</span>
+                      <h3>Column Subtitle</h3>
+                    </div>               
+                  </div>
+      
+                  <div className="column"> 
+                  <div>
+                    <div className="column-image">                
+                      <img src={purpleSpace} /> 
+                      <span className="overlay">Overlay</span>
+                    </div>
+      
+                    <span>Date</span>
+                    <h3>Column Subtitle</h3>
+                    </div>                
+                  </div>
+      
+      
+                </div>
+                {/* <p>Load More +</p> */}
+              </div>
+      
+      
+              <div className="bodyContentHistory">
+                <div>
+                  <h2>History of Earth 2</h2>
+                  <p>After the event, the decision was made to relocate the entire human race to a new home. For a full history of that which we don't dare utter the words out loud, click the button below.</p>
+                  <button>Read more</button>
+                </div>
+              </div>
+              
+            </div>
+      
+      
+      
+      
+          </div>
+      
+          <div className="contactFormWrapper">
+            <div className="contactFormContent">
+      
+              <div className="contactFormIntro">
+                <h1>Earth 2 Ark Registration</h1>
+                <p>Using this form you can confirm your interest in being a vital part of this exciting new adventure for the human race.</p>
+                <p>Just fill out the form and before long, adventure awaits.</p>
+              </div>
+      
+              <div className="contactForm">
+      
+                <form action={()=>this.submitForm()}>
+      
+                  <span className="contactFormInput">
+                    <label for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="" required />
+                  </span>
+      
+                  <span className="contactFormInput">
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="" required />
+                  </span>
+      
+                  <span className="contactFormInput">
+                    <label for="hdn">Human Identity Number*</label>
+                    <input type="text" id="hdn" name="hdn" placeholder="" required />
+                  </span>
+      
+                  <span className="contactFormInput">
+                    <label for="livingZone">Living Zone*</label>
+                    <input type="text" id="livingZone" name="livingZone" placeholder="" required />
+                  </span>
+      
+                  <span className="contactFormInput">
+                    <label for="eyeColour">Eye Colour*</label>            
+                    <select id="eyeColour" name="eyeColour" placeholder="" required>
+                      <option value=""> -- Select --</option>
+                      <option value="Blue">Blue</option>
+                      <option value="green">Green</option>
+                      <option value="hazel">Hazel</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </span>
+      
+      
+                  <div className="formCheckboxSection">
+                    <p>Earth 2 Support Requirements</p>
+                    
+                    <div className="formCheckboxes">
+                      <span>
+                        <input type="checkbox" id="housing" name="housing" /> 
+                        <label for="housing">Housing</label>
+                      </span>
+                      
+                      <span>
+                        <input type="checkbox" id="security" name="security"  /> 
+                        <label for="security">Security</label>
+                      </span>
+                      
+                      <span>
+                        <input type="checkbox" id="employment" name="employment"  /> 
+                        <label for="employment">Employment</label>
+                      </span>
+                      
+                      <span>
+                        <input type="checkbox" id="healthcare" name="healthcare"  /> 
+                        <label for="healthcare">Healthcare</label>
+                      </span>
+      
+                      <span>
+                        <input type="checkbox" id="oxygen" name="oxygen"  /> 
+                        <label for="oxygen">Oxygen</label>
+                      </span>
+      
+                    </div>
+      
+                  </div>
+       
+                
+      
+                <p>You will be contacted directly by your local adminstration official in the event your application is approved</p>
+                <p>This form does not constitute a contract or promise of entry onto an Ark. Only suitable applicants matching certain criteria will be considered. Repeated failed applications will result in lowered credit score and reduced rations.</p>
+      
+                <div className="submitForm">
+                  <span className="submitFormBtn">
+                    <input type="submit" value="Submit" />
+                  </span>
+                </div>
+      
+                <div className="formTerms">
+                  <span id="terms">Terms &#38; Conditions</span>
+                  <span>*Required Fields</span>
+                </div>
+                </form>
+              </div>
+            </div>
+            </div>
+            
+      
+            <div className="footerWrapper">
+              <div className="footerContent">
+                
+                <div id="footerLeft">
+                  <h1>Earth 2</h1> 
+                  <span>| a new adventure</span>
+                </div>
+      
+                <div id="footerRight">
+                  <p>For more information: <br/> <span>earth2@human.gov</span></p>
+                </div>
+      
+              </div>
+      
+              
+            </div>
+            <div className="footerBlock"></div>
+          </main>
+        )
+  }
+
 }
-
-
 export default IndexPage
