@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 body{
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .mainWrapper{
@@ -7,22 +10,33 @@ body{
 }
 
 .navBarWrapper{
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0);
 
     position: relative;
     width: 100%;
     z-index: 10;
 }
     .navBarWrapper > nav{
+        color: white;
         display: flex;
             align-items: center;
             justify-content: space-between;
         max-width: 1000px;
         margin: 0 auto;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+        .navBarWrapper > nav > span{
+            outline: 1px solid white;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+        }
 
 .backgroundWrapper{
-    background-color: red;
+    background-color: white;
     display: block;
     position: relative;
     height: 100vh;
@@ -44,11 +58,23 @@ body{
     width: 100%;
     z-index: -10;
 }
-    .testContent{
-        background-color: yellow;
-        outline: 1px solid white;
+    .bannerText{
+        
+        /* background-color: yellow; */
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 3rem;
+        /* outline: 1px solid white; */
         
         margin: 0 auto;
+        text-align: center;
+        width: 100%;
+
+        /* Centering In Div */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 
@@ -93,3 +119,17 @@ body{
                 align-items: center;
                 justify-content: space-evenly;
         }
+
+@media (min-width: 800px) { 
+
+    .bannerText{
+        font-size: 5rem;
+    }
+ }
+
+ @media (min-width: 1200px) { 
+
+    .bannerText{
+        font-size: 6rem;
+    }
+ }

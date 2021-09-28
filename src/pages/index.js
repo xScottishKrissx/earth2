@@ -21,17 +21,16 @@ const IndexPage = () => {
 {/* Navbar */}
     <div className="navBarWrapper">
       <nav>
-        <h1>Navbar</h1>
-        <h1>Navbar</h1>
+        <h1>Earth 2</h1>
+        <span>Reserve Your Place</span>
       </nav>
     </div>
 
 
 {/* Fixed Image Area */}
     <div className="backgroundWrapper">
-      <div className="backgroundImage">
-       <span className="testContent">Image</span>
-      </div>
+      <div className="backgroundImage"></div>
+      <span className="bannerText">endless possibilities</span>
     </div>
 
 
