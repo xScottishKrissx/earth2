@@ -84,6 +84,23 @@ body{
         left: 0;
     width: 100%;
     z-index: -10;
+
+    animation: imageAni 30s infinite;
+
+    animation-fill-mode: both;
+
+}
+
+@keyframes imageAni {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
     .bannerText{
         
@@ -131,6 +148,11 @@ body{
         margin: 0 auto;
         /* outline: 1px solid red; */
     }
+    .bodyContentAbout{
+        font-size: 20px;
+        padding: 150px;
+        text-align: center;
+    }
 
     .bodyContentImage{
         
@@ -139,10 +161,10 @@ body{
         width: 100%;
     }
     #upperImage{
-        margin-bottom: 150px;
+        /* margin-bottom: 150px; */
     }
     #lowerImage{
-        margin-top: 150px;
+        /* margin-top: 150px; */
     }
 
 
@@ -206,6 +228,7 @@ body{
     .bodyContentHistory{
         margin-bottom: 60px;
         margin-top: 60px;
+        text-align: center;
         width: 100%;
     }
 
