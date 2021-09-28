@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 // components
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
 
 import shuttle from '../images/shuttle.jpg'
 import eclipse from '../images/eclipse.jpg'
@@ -11,7 +11,7 @@ import purpleSpace from '../images/purpleSpace.jpg'
 import './index.css'
 
 
-export class IndexPage extends React.Component {
+export default class IndexPage extends React.Component {
 
   constructor(props){
       super(props);
@@ -69,7 +69,7 @@ export class IndexPage extends React.Component {
       {/* Fixed Image Area */}
           <div className="backgroundWrapper">
             <div style={styleTest}className="backgroundImage"></div>
-            <span className="bannerText">endless possibilities</span>
+            <span className="bannerText">endless possibilitiesss</span>
           </div>
       
       
@@ -276,4 +276,3 @@ export class IndexPage extends React.Component {
   }
 
 }
-export default IndexPage
