@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
+*{
+    outline: 1px solid red;
+}
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -82,12 +85,13 @@ body{
     background-color: white;
     display: flex;
         flex-direction: column;
+    padding: 20px;
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     z-index: 1;
 }
     .bodyWrapper > div{
-        outline: 5px solid orange;
+        /* outline: 5px solid orange; */
         margin: 0 auto;
         max-width: 1000px;
         width: 100%;
@@ -97,28 +101,174 @@ body{
         display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            /* justify-content: center; */
         height: 100%;
         max-width: 1000px;
         margin: 0 auto;
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
     }
+
+    .bodyContentImage{
+        
+    }
+    .bodyContentImage > img{
+        width: 100%;
+    }
+    #upperImage{
+        margin-bottom: 150px;
+    }
+    #lowerImage{
+        margin-top: 150px;
+    }
+
+
+    .bodyContentLatest{
+        margin-top: 60px;
+        width: 100%;
+    }
+        .bodyContentLatest > h2 {
+            text-align: center;
+        }
+
+    .latestNewsSquaresWrapper{
+        display: flex;
+            flex-direction: column;
+    }
+
+    .column{
+        width: 100%;
+    }
+        .column-image > img{
+            width: 100%;
+            z-index: 1;
+        }
+
+            .column-image{
+                position: relative;
+            }
+
+            .overlay{
+                background-color: rgb(0 0 0 / 25%);
+                color: white;
+                cursor: pointer;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                font-size: 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 10;
+            }
+                .overlay:hover{
+                    animation: showOverlay 1s;
+                    animation-fill-mode: forwards;
+                }
+                @keyframes showOverlay {
+                    0%{
+                        opacity: 0;
+                    }
+                    30%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+
+    .bodyContentHistory{
+        margin-bottom: 60px;
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .bodyContentHistory > div {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+    .bodyContentHistory > div > p{
+        color: grey;
+        max-width: 600px;
+
+        /* outline: 1px solid red; */
+    }
+    .bodyContentHistory > div > button{
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        outline: 1px solid black;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+
     .contactFormWrapper{
-        background-color: red;
+        background-color: blue;
         display: flex;
             align-items: center;
             justify-content: center;
         height: 100%;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        position: relative;
+        z-index: 1;
     }
+        .contactFormContent{
+            max-width: 1000px;
+            width: 100%;
+            
+        }
 
     .footerWrapper{
-
+        background-color: white;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        position: relative;
+        z-index: 1;            
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
         .footerContent{
-            display: flex;
-                align-items: center;
-                justify-content: space-evenly;
+
+            max-width: 1000px;
+            width: 100%;
         }
+
+
+@media (min-width: 700px) { 
+
+    .latestNewsSquaresWrapper{
+        flex-direction: row;
+            justify-content: space-between;
+    }
+
+    .column{
+        width: 33%;
+    }
+    
+    #middleColumn{
+        margin-left: 20px;
+        margin-right: 20px;
+    }    
+
+}
 
 @media (min-width: 800px) { 
 
