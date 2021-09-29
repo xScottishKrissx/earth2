@@ -23,15 +23,16 @@ export default class IndexPage extends React.Component {
       if (typeof window !== `undefined`){ 
         window.addEventListener("scroll",this.scroll)
         window.addEventListener('submit', this.submitForm);
+        document.addEventListener("keyup", this.handleKeyDown, false);
       }
 
 
-      document.addEventListener("keyup", this.handleKeyDown, false);
+
       this.handleKey = this.handleKeyDown.bind(this);
   }
 
   componentDidMount(){
-    
+
     if (typeof window !== `undefined`){ 
       window.addEventListener("scroll",this.scroll)
       document.addEventListener("keyup", this.handleKeyDown, false);
@@ -53,25 +54,27 @@ export default class IndexPage extends React.Component {
   }
 
   scrollToForm(){
-    let getForm = document.getElementById("contactForm")
-    getForm.scrollIntoView({behavior:"smooth"})
+    if(typeof window !== `undefined`){
+      let getForm = document.getElementById("contactForm")
+      getForm.scrollIntoView({behavior:"smooth"})
+    }
   }
 
   handleKeyDown = (ev) => {
     let getForm;
 
     // To Form - F
-    if (ev.keyCode === 70) {
+    if (ev.keyCode === 70 && typeof window !== `undefined`) {
       getForm = document.getElementById("contactForm") 
       getForm.scrollIntoView({behavior:"smooth"})
     }
     // To Top - T
-    if(ev.keyCode === 84){
+    if(ev.keyCode === 84 && typeof window !== `undefined`){
       getForm = document.getElementById("topOfPage")
       getForm.scrollIntoView({behavior:"smooth"})
     } 
 
-    if (ev.keyCode === 13) {
+    if (ev.keyCode === 13 && typeof window !== `undefined`) {
       getForm = document.getElementById("contactForm") 
       getForm.scrollIntoView({behavior:"smooth"})
     }else{
