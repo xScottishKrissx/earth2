@@ -20,7 +20,9 @@ export default class IndexPage extends React.Component {
       this.state = {
           showScrollToTopButton: false
       }
-      if (typeof window !== `undefined`){ 
+
+
+      if (this.state.isBrowser){ 
         window.addEventListener("scroll",this.scroll)
         window.addEventListener('submit', this.submitForm);
         document.addEventListener("keyup", this.handleKeyDown, false);
@@ -32,10 +34,11 @@ export default class IndexPage extends React.Component {
   }
 
   componentDidMount(){
+    if(typeof window !== 'undefined')this.setState({isBrowser: true})
 
-    if (typeof window !== `undefined`){ 
+    if (this.state.isBrowser){ 
       window.addEventListener("scroll",this.scroll)
-      document.addEventListener("keyup", this.handleKeyDown, false);
+      document.addEventListener("keyup", this.handleKeyDown, false);  
     }
 
   }
@@ -44,7 +47,7 @@ export default class IndexPage extends React.Component {
 
   scroll = () => {
 
-    if (typeof window !== `undefined`){ 
+    if (this.state.isBrowser){ 
         const windowHeight = "innerHeight" in window ? window.innerHeight : document.documentElement.offsetHeight;
         const windowBottom = windowHeight - window.pageYOffset;
         this.setState({ scrollPos:windowBottom })
@@ -54,7 +57,7 @@ export default class IndexPage extends React.Component {
   }
 
   scrollToForm(){
-    if(typeof window !== `undefined`){
+    if(this.state.isBrowser){
       let getForm = document.getElementById("contactForm")
       getForm.scrollIntoView({behavior:"smooth"})
     }
@@ -63,31 +66,32 @@ export default class IndexPage extends React.Component {
   handleKeyDown = (ev) => {
     let getForm;
 
-    // To Form - F
-    if (ev.keyCode === 70 && typeof window !== `undefined`) {
-      getForm = document.getElementById("contactForm") 
-      getForm.scrollIntoView({behavior:"smooth"})
-    }
-    // To Top - T
-    if(ev.keyCode === 84 && typeof window !== `undefined`){
-      getForm = document.getElementById("topOfPage")
-      getForm.scrollIntoView({behavior:"smooth"})
-    } 
+    if(this.state.isBrowser){
+      // To Form - F
+      if (ev.keyCode === 70) {
+        getForm = document.getElementById("contactForm") 
+        getForm.scrollIntoView({behavior:"smooth"})
+      }
+      // To Top - T
+      if(ev.keyCode === 84 ){
+        getForm = document.getElementById("topOfPage")
+        getForm.scrollIntoView({behavior:"smooth"})
+      } 
 
-    if (ev.keyCode === 13 && typeof window !== `undefined`) {
-      getForm = document.getElementById("contactForm") 
-      getForm.scrollIntoView({behavior:"smooth"})
-    }else{
-      // do nothing
-    }
-    
+      if (ev.keyCode === 13) {
+        getForm = document.getElementById("contactForm") 
+        getForm.scrollIntoView({behavior:"smooth"})
+      }else{
+        // do nothing
+      }
+  }
     
   }
 
 
 
   componentWillUnmount(){
-    if (typeof window !== `undefined`){ 
+    if (this.state.isBrowser){ 
       window.removeEventListener('scroll', this.scroll);        
       window.removeEventListener('keyup',this.handleKeyDown, {passive:true});
     }

@@ -5,7 +5,11 @@ Gatsby
   MDX
   Plugins
   
-  Tip: If it's not working, just restart the local server. That solves most of my problems.
+  Tip: 
+      ☐ If it's not working, just restart the local server. That solves most of my problems.
+      ☐ document and window -> will throw an error in build 
+        ☐ bad solution -> add checks for "typeof window !== `undefined`"
+
 
 
 Todo:
