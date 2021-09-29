@@ -35,9 +35,14 @@ export default class IndexPage extends React.Component {
   submitForm = () => { alert("Submit Form") }
 
   scroll = () => {
-    const windowHeight = "innerHeight" in window ? window.innerHeight : document.documentElement.offsetHeight;
-    const windowBottom = windowHeight - window.pageYOffset;
-    this.setState({ scrollPos:windowBottom })
+
+    if (typeof window !== `undefined`){ 
+        const windowHeight = "innerHeight" in window ? window.innerHeight : document.documentElement.offsetHeight;
+        const windowBottom = windowHeight - window.pageYOffset;
+        this.setState({ scrollPos:windowBottom })
+    }
+
+
   }
 
   scrollToForm(){
