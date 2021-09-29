@@ -5,15 +5,15 @@ export const ContactForm = (props) =>{
     
     return(
         <div className="contactFormWrapper" id="contactForm">
-        <div className="contactFormContent">
+        <div className="contactFormContent" id="formAnchor">
   
-          <div className="contactFormIntro">
-            <h1>Earth 2 Ark Registration</h1>
+          <div className="contactFormIntro" >
+            <h1 >Earth 2 Ark Registration</h1>
             <p>Using this form you can confirm your interest in being a vital part of this exciting new adventure for the human race.</p>
-            <p>Just fill out the form and before long, adventure awaits.</p>
+            <p >Just fill out the form and before long, adventure awaits.</p>
           </div>
   
-          <div className="contactForm">
+          <div className="contactForm" >
   
             <form>
   
@@ -37,7 +37,7 @@ export const ContactForm = (props) =>{
                 <input type="text" id="livingZone" name="livingZone" placeholder="" required />
               </span>
   
-              <span className="contactFormInput">
+              <span className="contactFormInput" >
                 <label htmlFor="eyeColour">Eye Colour*</label>            
                 <select id="eyeColour" name="eyeColour" placeholder="" required>
                   <option value=""> -- Select --</option>
@@ -49,7 +49,7 @@ export const ContactForm = (props) =>{
               </span>
   
   
-              <div className="formCheckboxSection">
+              <div className="formCheckboxSection" >
                 <p>Earth 2 Support Requirements</p>
                 
                 <div className="formCheckboxes">

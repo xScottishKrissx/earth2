@@ -24,7 +24,9 @@ export const BodyWrapper = (props) =>{
             }
           }
         }
-        id
+        id,
+        body,
+        slug
       }
     }
   }

@@ -30,3 +30,22 @@
     font-weight: 300;
     margin: 3rem 0;
   }
+
+  .pageWrapper{
+    background-color: #304152;
+    color: white;
+
+    min-height: 100vh;
+  }
+
+  .contentWrapper{
+    /* background-color: yellow; */
+    height: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }

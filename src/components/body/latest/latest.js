@@ -4,9 +4,8 @@ import { Link  } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import './latest.css'
-
-import purpleSpace from '../../../images/purplespace.jpg'
 
 export const Latest = (props) =>{
     
@@ -28,13 +27,16 @@ return(
          
       
             <div className="column-image">              
-              {/* <img src={x.frontmatter.hero_image.childImageSharp.gatsbyImageData.images.fallback.src} alt="" />  */}
-              <GatsbyImage image={getImage(x.frontmatter.hero_image)} />
+              <GatsbyImage image={getImage(x.frontmatter.hero_image)} alt="" />
               <span className="overlay">Overlay</span>
             </div>
       
             <span>{x.frontmatter.date}</span>
-            <div>{x.frontmatter.title}</div>
+            <div><Link to={`/blog/${x.slug}`}>{x.frontmatter.title}</Link></div>
+
+            
+           {/* <MDXRenderer>{x.body}</MDXRenderer>  */}
+            
       
           </div>             
         </div>
@@ -42,51 +44,8 @@ return(
       ))
     
     }
-
-
-
-      {/* <div className="column"> 
-        <div>
-
-          <div className="column-image">              
-            <img src={purpleSpace} alt="" /> 
-            <span className="overlay">Overlay</span>
-          </div>
-
-          <span>Date</span>
-          <div>
-             </div>
-
-        </div>             
-      </div>
-
-      <div className="column" id="middleColumn"> 
-      <div>
-          <div className="column-image">              
-            <img src={purpleSpace} alt="" /> 
-            <span className="overlay">Overlay</span>
-          </div>
-
-          <span>Date</span>
-          <h3>Column Subtitle</h3>
-        </div>               
-      </div>
-
-      <div className="column"> 
-      <div>
-        <div className="column-image">                
-          <img src={purpleSpace} alt="" /> 
-          <span className="overlay">Overlay</span>
-        </div>
-
-        <span>Date</span>
-        <h3>Column Subtitle</h3>
-        </div>                
-      </div> */}
-
-
+  
     </div>
-    {/* <p>Load More +</p> */}
   </div>
 )
 

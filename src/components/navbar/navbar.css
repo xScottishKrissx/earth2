@@ -20,6 +20,9 @@
         .navBarWrapper > nav > h1{
             font-size: 3rem;
         }
+        .navBarWrapper > nav > h1 > a:visited{
+            color: white;
+        }
         .navBarWrapper > nav > span{
             /* background-color: #304152; */
             cursor: pointer;
@@ -32,8 +35,14 @@
         }
         .navBarWrapper > nav > span:hover{
             background-color: white;
-            color: #304152;
+            color: #304152 !important;
         }
         .navBarWrapper > nav > span:focus{
             outline: 10px solid white;
+        }
+        .navBarWrapper > nav > span:hover > a {
+            color: #304152 !important;
+        }
+        .navBarWrapper > nav > span > a:visited {
+            color: white;
         }

@@ -51,6 +51,11 @@ Todo:
       
       Latest News:
         ☐ Create 3 Pages using mdx system from tutorial
+          ☐ I have the latest news tiles generated from the blog...
+            ✔ ...now to get working pages. @done(16:24 - 29/09/21)
+            ✔ Pages in place, now to style them. @done(17:39 - 29/09/21)
+              ✔ Make Earth2 a home button @done(17:38 - 29/09/21)
+              ✔ I've spent about as much time styling these pages as i want. If i think of anything more interesting then i can do it but I don't want to get too bogged down. The important part was the creation of the pages. @done(17:39 - 29/09/21)
         ✔ There's a small grey line when activating the overlay @done(10:35 - 29/09/21)
         ☐ Have a go at the load more news button(after the look is in place, this should just updating an array)
       
