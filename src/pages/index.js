@@ -39,6 +39,11 @@ export default class IndexPage extends React.Component {
     })
 
   }
+
+  scrollToForm(){
+    let getForm = document.getElementById("contactForm")
+    getForm.scrollIntoView({behavior:"smooth"})
+  }
   render(){
     
     const styleTest = {
@@ -61,14 +66,14 @@ export default class IndexPage extends React.Component {
           <div className="navBarWrapper">
             <nav>
               <h1>Earth 2</h1>
-              <span>Reserve Your Place</span>
+              <span onClick={()=>this.scrollToForm()}>Reserve Your Place</span>
             </nav>
           </div>
       
       
       {/* Fixed Image Area */}
           <div className="backgroundWrapper">
-            <div style={styleTest}className="backgroundImage"></div>
+            <div style={styleTest} className="backgroundImage"></div>
             <span className="bannerText">endless possibilitiesss</span>
           </div>
       
@@ -84,14 +89,14 @@ export default class IndexPage extends React.Component {
               </div>
       
               
-              <div className="bodyContentImage" id="upperImage"><img src={eclipse} /></div>
+              <div className="bodyContentImage" id="upperImage"><img src={eclipse} alt="the eclipse the end of all things"/></div>
       
               <div className="bodyContentAbout">
                 <p>The first of us are already on the way and you can be a part of that too. Everyone on Earth 1 will be allocated a spot on the arks, but you can get access ahead of the curve by registering your interest now. All you need to do is act now because it's time to go. We need to leave. There isn't much time. Hurry.</p>
               </div>
       
       
-              <div className="bodyContentImage" id="lowerImage"><img src={shuttle} /></div>
+              <div className="bodyContentImage" id="lowerImage"><img src={shuttle} alt="a shuttle taking us to salvation" /></div>
       
               <div className="bodyContentLatest">
                 <h2>Latest News</h2>
@@ -101,7 +106,7 @@ export default class IndexPage extends React.Component {
                     <div>
       
                       <div className="column-image">              
-                        <img src={purpleSpace} /> 
+                        <img src={purpleSpace} alt="" /> 
                         <span className="overlay">Overlay</span>
                       </div>
       
@@ -113,7 +118,7 @@ export default class IndexPage extends React.Component {
                   <div className="column" id="middleColumn"> 
                   <div>
                       <div className="column-image">              
-                        <img src={purpleSpace} /> 
+                        <img src={purpleSpace} alt="" /> 
                         <span className="overlay">Overlay</span>
                       </div>
       
@@ -125,7 +130,7 @@ export default class IndexPage extends React.Component {
                   <div className="column"> 
                   <div>
                     <div className="column-image">                
-                      <img src={purpleSpace} /> 
+                      <img src={purpleSpace} alt="" /> 
                       <span className="overlay">Overlay</span>
                     </div>
       
@@ -155,7 +160,7 @@ export default class IndexPage extends React.Component {
       
           </div>
       
-          <div className="contactFormWrapper">
+          <div className="contactFormWrapper" id="contactForm">
             <div className="contactFormContent">
       
               <div className="contactFormIntro">
@@ -169,27 +174,27 @@ export default class IndexPage extends React.Component {
                 <form action={()=>this.submitForm()}>
       
                   <span className="contactFormInput">
-                    <label for="firstName">First Name*</label>
+                    <label htmlFor="firstName">First Name*</label>
                     <input type="text" id="firstName" name="firstName" placeholder="" required />
                   </span>
       
                   <span className="contactFormInput">
-                    <label for="lastName">Last Name*</label>
+                    <label htmlFor="lastName">Last Name*</label>
                     <input type="text" id="lastName" name="lastName" placeholder="" required />
                   </span>
       
                   <span className="contactFormInput">
-                    <label for="hdn">Human Identity Number*</label>
-                    <input type="text" id="hdn" name="hdn" placeholder="" required />
+                    <label htmlFor="hdn">Human Identity Number*</label>
+                    <input htmlFor="text" id="hdn" name="hdn" placeholder="" required />
                   </span>
       
                   <span className="contactFormInput">
-                    <label for="livingZone">Living Zone*</label>
+                    <label htmlFor="livingZone">Living Zone*</label>
                     <input type="text" id="livingZone" name="livingZone" placeholder="" required />
                   </span>
       
                   <span className="contactFormInput">
-                    <label for="eyeColour">Eye Colour*</label>            
+                    <label htmlFor="eyeColour">Eye Colour*</label>            
                     <select id="eyeColour" name="eyeColour" placeholder="" required>
                       <option value=""> -- Select --</option>
                       <option value="Blue">Blue</option>
@@ -206,27 +211,27 @@ export default class IndexPage extends React.Component {
                     <div className="formCheckboxes">
                       <span>
                         <input type="checkbox" id="housing" name="housing" /> 
-                        <label for="housing">Housing</label>
+                        <label htmlFor="housing">Housing</label>
                       </span>
                       
                       <span>
                         <input type="checkbox" id="security" name="security"  /> 
-                        <label for="security">Security</label>
+                        <label htmlFor="security">Security</label>
                       </span>
                       
                       <span>
                         <input type="checkbox" id="employment" name="employment"  /> 
-                        <label for="employment">Employment</label>
+                        <label htmlFor="employment">Employment</label>
                       </span>
                       
                       <span>
                         <input type="checkbox" id="healthcare" name="healthcare"  /> 
-                        <label for="healthcare">Healthcare</label>
+                        <label htmlFor="healthcare">Healthcare</label>
                       </span>
       
                       <span>
                         <input type="checkbox" id="oxygen" name="oxygen"  /> 
-                        <label for="oxygen">Oxygen</label>
+                        <label htmlFor="oxygen">Oxygen</label>
                       </span>
       
                     </div>

@@ -155,8 +155,8 @@ body{
     }
     .bodyContentAbout{
         font-size: 20px;
-        padding: 150px;
-        text-align: center;
+        padding: 75px;
+        /* text-align: center; */
     }
 
     .bodyContentImage{
@@ -210,7 +210,7 @@ body{
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: 98%;
                 opacity: 0;
                 z-index: 10;
             }
@@ -255,6 +255,7 @@ body{
         background-color: white;
         border: none;
         cursor: pointer;
+        margin-top: 20px;
         outline: 1px solid black;
         padding-left: 35px;
         padding-right: 35px;
@@ -361,6 +362,7 @@ body{
                 justify-content: space-between;
             }
                 #terms{
+                    cursor: pointer;
                     text-decoration: underline;
                 }
 
@@ -376,9 +378,12 @@ body{
     }
         .footerContent{
             display: flex;
+                flex-direction: column;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
             max-width: 1000px;
+            padding-left: 20px;
+            padding-right: 20px;
             width: 100%;
         }
         #footerLeft{
@@ -412,7 +417,11 @@ body{
 
 
 @media (min-width: 700px) { 
-
+    .bodyContentAbout{
+        font-size: 20px;
+        padding: 150px;
+        /* text-align: center; */
+    }
     .latestNewsSquaresWrapper{
         flex-direction: row;
             justify-content: space-between;
@@ -426,6 +435,12 @@ body{
         margin-left: 20px;
         margin-right: 20px;
     }    
+
+    .footerContent{
+        /* flex */
+        flex-direction: row;
+        align-items: center;
+    }
 
 }
 
