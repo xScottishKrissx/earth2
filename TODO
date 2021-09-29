@@ -1,0 +1,62 @@
+
+Gatsby
+  CSS Modules
+  GraphiQL
+  MDX
+  Plugins
+  
+  Tip: If it's not working, just restart the local server. That solves most of my problems.
+
+
+Todo:
+
+  Goals:
+    ☐ Create some pages and access them using the MDX method from the tutorial
+    ☐ Have as much of the information come using the GraphiQL data calls.
+    ✔ create the cool hide while scrolling animation. @done(10:15 - 29/09/21)
+    ☐ Split code into logical components.
+      ☐ Navbar
+      ☐ Image
+      ☐ Scrolling Body
+        ☐ Main Content
+        ☐ Contact Form
+        ☐ Footer
+    
+  Tasks:
+    General:
+      ✔ Add any alt tags that need to be added @done(10:48 - 29/09/21)
+      ✔ Add any form labels that need to be added @done(10:48 - 29/09/21)
+    Navbar:
+      ✔ Set as transparent @done(10:15 - 29/09/21)
+      ✔ Format page header @done(10:15 - 29/09/21)
+      ✔ Format Button @done(10:15 - 29/09/21)
+        ✔ Should scroll to contact form @done(10:53 - 29/09/21)
+      
+    Fixed Image:
+      ✔ Banner Text @done(10:15 - 29/09/21)
+    
+    Body:
+      ✔ Improve appearance of text, it's too narrow on smaller window width @done(10:31 - 29/09/21)
+      
+      Latest News:
+        ☐ Create 3 Pages
+        ✔ There's a small grey line when activating the overlay @done(10:35 - 29/09/21)
+        ☐ Have a go at the load more news button(after the look is in place, this should just updating an array)
+      
+      History:
+        ✔ Space out elements a bit @done(10:36 - 29/09/21)
+
+    Contact Form:
+      ✔ Create Contact form @done(10:15 - 29/09/21)
+        ☐ Doesn't actually work but still...maybe have it send something somewhere?
+      ☐ Terms and conditions cursor should be a pointer
+    
+    Footer:
+      ✔ Create Footer @done(10:18 - 29/09/21)
+      ✔ On mobile, switch layout to column @done(10:41 - 29/09/21)
+    
+  Daily Goals:
+    
+
+          
+  
