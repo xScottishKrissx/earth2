@@ -1,0 +1,90 @@
+.contactFormWrapper{
+    background-color: #304152;
+    color: white;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+    .contactFormContent{
+        max-width: 600px;
+        width: 100%;
+        
+    }
+    .contactFormIntro{
+        padding-bottom: 20px;
+        text-align: center;
+    }
+        .contactFormIntro > h1{
+            color: #fff700;
+        }
+        .contactForm{
+            padding-top: 20px;
+    
+        }
+        .contactForm > form {
+            display: flex;
+                flex-direction: column;
+        }
+        .contactFormInput{
+            display: flex;
+                flex-direction: column;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .contactFormInput > input, .contactFormInput > select {
+            background-color: #304152;
+            color: white;
+            border: none;
+            height: 40px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            outline: 1px solid white;
+        }
+        .formCheckboxSection{
+            display: flex;
+                flex-direction: column;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+            .formCheckboxes{
+                display: flex;
+                    justify-content: space-around;
+            }
+        .submitForm{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        .submitFormBtn > input{
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            outline: 1px solid white;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+        }
+  
+        .submitFormBtn > input:focus{
+            outline: 10px solid black;
+        }
+
+        .formTerms{
+            color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            justify-content: space-between;
+        }
+            #terms{
+                cursor: pointer;
+                text-decoration: underline;
+            }

@@ -1,0 +1,15 @@
+.aboutText{
+    font-size: 20px;
+    padding: 75px;
+}
+
+.aboutImage > img{
+    width: 100%;
+}
+
+@media (min-width: 700px) { 
+    .bodyContentAbout{
+        font-size: 20px;
+        padding: 150px;
+    }
+}

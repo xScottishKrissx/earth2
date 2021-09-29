@@ -16,11 +16,14 @@ Todo:
     ✔ create the cool hide while scrolling animation. @done(10:15 - 29/09/21)
     ☐ Split code into logical components.
       ✔ Navbar @done(12:23 - 29/09/21)
-      ☐ Image
-      ☐ Scrolling Body
-        ☐ Main Content
-        ☐ Contact Form
-        ☐ Footer
+      ✔ Image @done(12:50 - 29/09/21)
+      ✔ Scrolling Body @done(12:50 - 29/09/21)
+        ✔ Main Content @done(13:03 - 29/09/21)
+          ✔ About @done(13:03 - 29/09/21)
+          ✔ Latest @done(13:03 - 29/09/21)
+          ✔ History @done(13:03 - 29/09/21)
+        ✔ Contact Form @done(12:50 - 29/09/21)
+        ✔ Footer @done(12:50 - 29/09/21)
     
   Tasks:
     General:

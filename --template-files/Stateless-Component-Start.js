@@ -1,3 +1,7 @@
+import * as React from 'react'
+
+// import './your.css'
+
 export const StatelessComponentDefault = (props) =>{
     
 return(

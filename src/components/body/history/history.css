@@ -1,0 +1,34 @@
+.history{
+    margin-bottom: 60px;
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.history > div {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.history > div > p{
+    color: grey;
+    max-width: 600px;
+}
+
+.history > div > button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    outline: 1px solid black;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+.history > div > button:focus{
+    outline: 10px solid black;
+}
