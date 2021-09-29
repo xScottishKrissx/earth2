@@ -1,11 +1,16 @@
 import * as React from 'react'
+import { useStaticQuery, graphql } from 'gatsby';
+import { Link  } from 'gatsby'
 
 import './latest.css'
 
 import purpleSpace from '../../../images/purplespace.jpg'
 
-export const Latest = (props) =>{
+export const Latest = ({prop}) =>{
     
+
+console.log(prop)
+
 return(
     <div className="latest">
     <h2>Latest News</h2>
@@ -20,7 +25,9 @@ return(
           </div>
 
           <span>Date</span>
-          <h3>Column Subtitle</h3>
+          <div>
+             </div>
+
         </div>             
       </div>
 

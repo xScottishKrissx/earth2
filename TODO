@@ -50,7 +50,7 @@ Todo:
       ✔ Improve appearance of text, it's too narrow on smaller window width @done(10:31 - 29/09/21)
       
       Latest News:
-        ☐ Create 3 Pages
+        ☐ Create 3 Pages using mdx system from tutorial
         ✔ There's a small grey line when activating the overlay @done(10:35 - 29/09/21)
         ☐ Have a go at the load more news button(after the look is in place, this should just updating an array)
       

@@ -1,9 +1,5 @@
 import * as React from 'react'
 
-// import { StaticImage } from 'gatsby-plugin-image'
-// components
-// import Layout from '../components/layout'
-
 
 
 import './index.css'
@@ -103,15 +99,7 @@ export default class IndexPage extends React.Component {
       return (
 
           <main className="mainWrapper" id="topOfPage">
-      
-          {/* <Layout pageTitle="Home Page">
-            <p  className={test}>I'm making this by following the Gatsby Tutorial.</p>
-            <StaticImage 
-              alt="earth2"
-              src="https://images.pexels.com/photos/796206/pexels-photo-796206.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-            />
-          </Layout> */}
-      
+            
             <NavBar scrollToForm={()=>this.scrollToForm()} handleKeyDown={()=>this.scrollToForm()} />
             <FixedImage scrollPos={this.state.scrollPos} />
             <BodyWrapper />
