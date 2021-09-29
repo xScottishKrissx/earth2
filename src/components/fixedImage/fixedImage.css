@@ -1,0 +1,74 @@
+.backgroundWrapper{
+    background-color: white;
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+
+.backgroundImage{
+    background-image: url('../../images/one.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    display: flex;
+        align-items: center;
+    height: 100%;
+
+    position: fixed;
+        top: 0;
+        left: 0;
+    width: 100%;
+    z-index: -10;
+
+    animation: imageAni 30s infinite;
+
+    animation-fill-mode: both;
+
+}
+
+@keyframes imageAni {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+    .bannerText{
+        
+        /* background-color: yellow; */
+        color: #fff700;
+        font-family: 'Raleway', sans-serif;
+        font-size: 3rem;
+        /* outline: 1px solid white; */
+        
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+
+        /* Centering In Div */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+@media (min-width: 800px) { 
+
+    .bannerText{
+        font-size: 5rem;
+    }
+
+}
+
+@media (min-width: 1200px) { 
+
+    .bannerText{
+        font-size: 6rem;
+    }
+
+}

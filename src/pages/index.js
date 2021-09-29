@@ -9,7 +9,8 @@ import eclipse from '../images/eclipse.jpg'
 import purpleSpace from '../images/purplespace.jpg'
 
 import './index.css'
-import NavBar from '../components/navbar/navBar'
+import NavBar from '../components/navbar/navbar.js'
+import FixedImage from '../components/fixedImage/fixedImage'
 
 export default class IndexPage extends React.Component {
 
@@ -19,6 +20,8 @@ export default class IndexPage extends React.Component {
           showScrollToTopButton: false
       }
       window.addEventListener("scroll",this.scroll)
+      window.addEventListener('submit', this.submitForm);
+
       document.addEventListener("keyup", this.handleKeyDown, false);
       this.handleKey = this.handleKeyDown.bind(this);
   }
@@ -74,8 +77,6 @@ export default class IndexPage extends React.Component {
 
   render(){
     
-    const fadeImage = { opacity: this.state.scrollPos / 1000 }
-
       return (
 
           <main className="mainWrapper" id="topOfPage">
@@ -89,13 +90,7 @@ export default class IndexPage extends React.Component {
           </Layout> */}
       
       <NavBar scrollToForm={()=>this.scrollToForm()} handleKeyDown={()=>this.scrollToForm()} />
-      
-      {/* Fixed Image Area */}
-          <div className="backgroundWrapper">
-            <div style={fadeImage} className="backgroundImage"></div>
-            <span className="bannerText">endless possibilitiesss</span>
-          </div>
-      
+      <FixedImage scrollPos={this.state.scrollPos} />
       
       {/* Scrolly Overlap Bit */}
           <div className="bodyWrapper">
@@ -190,7 +185,7 @@ export default class IndexPage extends React.Component {
       
               <div className="contactForm">
       
-                <form action={()=>this.submitForm()}>
+                <form>
       
                   <span className="contactFormInput">
                     <label htmlFor="firstName">First Name*</label>

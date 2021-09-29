@@ -15,7 +15,7 @@ Todo:
     ☐ Have as much of the information come using the GraphiQL data calls.
     ✔ create the cool hide while scrolling animation. @done(10:15 - 29/09/21)
     ☐ Split code into logical components.
-      ☐ Navbar
+      ✔ Navbar @done(12:23 - 29/09/21)
       ☐ Image
       ☐ Scrolling Body
         ☐ Main Content
@@ -29,7 +29,7 @@ Todo:
       ✔ Added support for keybord controls @done(11:19 - 29/09/21)
         ✔ F - Goes to form @done(11:19 - 29/09/21)
         ✔ T - Scrolls to top of page @done(11:18 - 29/09/21)
-        
+
     Navbar:
       ✔ Set as transparent @done(10:15 - 29/09/21)
       ✔ Format page header @done(10:15 - 29/09/21)
