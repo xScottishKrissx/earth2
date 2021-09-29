@@ -58,6 +58,7 @@ Todo:
               ✔ I've spent about as much time styling these pages as i want. If i think of anything more interesting then i can do it but I don't want to get too bogged down. The important part was the creation of the pages. @done(17:39 - 29/09/21)
         ✔ There's a small grey line when activating the overlay @done(10:35 - 29/09/21)
         ☐ Have a go at the load more news button(after the look is in place, this should just updating an array)
+          ☐ I think this will require a stateful component to work
       
       History:
         ✔ Space out elements a bit @done(10:36 - 29/09/21)

@@ -10,9 +10,18 @@ import './latest.css'
 export const Latest = (props) =>{
     
 
-console.log(props.pageInfo)
+console.log(props.pageInfo.slice(0,3))
 
 // const image = getImage(props.pageInfo.frontmatter.hero_image)
+
+
+// I think this will need to become a state component in order to update the page on button click.
+let array1 = props.pageInfo.slice(0,3)
+let array2 = props.pageInfo.slice(3,6)
+
+console.log(array1)
+console.log(array2)
+
 
 return(
     <div className="latest">
@@ -20,7 +29,7 @@ return(
     <div className="latestWrapper">
 
     {
-      props.pageInfo.map(x => (
+      array1.map(x => (
 
           <div className="column" key={x.id}> 
           <div>     
@@ -44,8 +53,9 @@ return(
       ))
     
     }
-  
+    
     </div>
+    <button>Load More</button>
   </div>
 )
 
