@@ -9,7 +9,7 @@ import eclipse from '../images/eclipse.jpg'
 import purpleSpace from '../images/purplespace.jpg'
 
 import './index.css'
-import NavBar from '../components/navbar/navbar'
+import NavBar from '../components/navbar/navBar'
 
 export default class IndexPage extends React.Component {
 
@@ -19,7 +19,8 @@ export default class IndexPage extends React.Component {
           showScrollToTopButton: false
       }
       window.addEventListener("scroll",this.scroll)
-      this.handleKeyDown = this.handleKeyDown.bind(this);
+      document.addEventListener("keyup", this.handleKeyDown, false);
+      this.handleKey = this.handleKeyDown.bind(this);
   }
 
   componentDidMount(){
@@ -42,14 +43,34 @@ export default class IndexPage extends React.Component {
 
   handleKeyDown = (ev) => {
     let getForm;
-    // To Form
-    if (ev.keyCode === 70) getForm = document.getElementById("contactForm") 
-    // To Top
-    if(ev.keyCode === 84) getForm = document.getElementById("topOfPage") 
+    console.log(ev)
+    // To Form - F
+    if (ev.keyCode === 70) {
+      getForm = document.getElementById("contactForm") 
+      getForm.scrollIntoView({behavior:"smooth"})
+    }
+    // To Top - T
+    if(ev.keyCode === 84){
+      getForm = document.getElementById("topOfPage")
+      getForm.scrollIntoView({behavior:"smooth"})
+    } 
+
+    if (ev.keyCode === 13) {
+      getForm = document.getElementById("contactForm") 
+      getForm.scrollIntoView({behavior:"smooth"})
+    }else{
+      // do nothing
+    }
     
-    getForm.scrollIntoView({behavior:"smooth"})
+    
   }
 
+
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.scroll);        
+    window.removeEventListener('keyup',this.handleKeyDown, {passive:true});
+  }
 
   render(){
     
@@ -67,7 +88,7 @@ export default class IndexPage extends React.Component {
             />
           </Layout> */}
       
-      <NavBar scrollToForm={()=>this.scrollToForm()} handleKeyDown={()=>this.handleKeyDown()}/>
+      <NavBar scrollToForm={()=>this.scrollToForm()} handleKeyDown={()=>this.scrollToForm()} />
       
       {/* Fixed Image Area */}
           <div className="backgroundWrapper">

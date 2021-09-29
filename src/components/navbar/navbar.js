@@ -1,4 +1,4 @@
-import * as React from 'React';
+import * as React from 'react';
 
 export const NavBar = (props) =>{
         
@@ -6,7 +6,7 @@ export const NavBar = (props) =>{
         <div className="navBarWrapper">
             <nav>
                 <h1>Earth 2</h1>
-                <span onClick={props.scrollToForm} onKeyDown={props.handleKeyDown}>Reserve Your Place</span>
+                <span tabIndex={0} role="button" onClick={props.scrollToForm} onKeyDown={props.handleKeyDown}>Reserve Your Place</span>
             </nav>
         </div>
       )

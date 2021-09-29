@@ -66,6 +66,9 @@ body{
             background-color: white;
             color: #304152;
         }
+        .navBarWrapper > nav > span:focus{
+            outline: 10px solid white;
+        }
 
 .backgroundWrapper{
     background-color: white;
@@ -262,6 +265,9 @@ body{
         padding-bottom: 12px;
         padding-top: 12px;
     }
+    .bodyContentHistory > div > button:focus{
+        outline: 10px solid black;
+    }
 
 
 
@@ -354,6 +360,9 @@ body{
             .submitFormBtn > input:hover{
                 /* color: #304152; */
                 /* background-color: white; */
+            }
+            .submitFormBtn > input:focus{
+                outline: 10px solid black;
             }
 
             .formTerms{
