@@ -20,16 +20,23 @@ export default class IndexPage extends React.Component {
       this.state = {
           showScrollToTopButton: false
       }
-      window.addEventListener("scroll",this.scroll)
-      window.addEventListener('submit', this.submitForm);
+      if (typeof window !== `undefined`){ 
+        window.addEventListener("scroll",this.scroll)
+        window.addEventListener('submit', this.submitForm);
+      }
+
 
       document.addEventListener("keyup", this.handleKeyDown, false);
       this.handleKey = this.handleKeyDown.bind(this);
   }
 
   componentDidMount(){
-    window.addEventListener("scroll",this.scroll)
-    document.addEventListener("keyup", this.handleKeyDown, false);
+    
+    if (typeof window !== `undefined`){ 
+      window.addEventListener("scroll",this.scroll)
+      document.addEventListener("keyup", this.handleKeyDown, false);
+    }
+
   }
   
   submitForm = () => { alert("Submit Form") }
@@ -77,8 +84,11 @@ export default class IndexPage extends React.Component {
 
 
   componentWillUnmount(){
-    window.removeEventListener('scroll', this.scroll);        
-    window.removeEventListener('keyup',this.handleKeyDown, {passive:true});
+    if (typeof window !== `undefined`){ 
+      window.removeEventListener('scroll', this.scroll);        
+      window.removeEventListener('keyup',this.handleKeyDown, {passive:true});
+    }
+
   }
 
   render(){
