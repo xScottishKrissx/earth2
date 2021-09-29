@@ -6,7 +6,7 @@ import * as React from 'react'
 
 import shuttle from '../images/shuttle.jpg'
 import eclipse from '../images/eclipse.jpg'
-import purpleSpace from '../images/purpleSpace.jpg'
+import purpleSpace from '../images/purplespace.jpg'
 
 import './index.css'
 import NavBar from '../components/navbar/navbar'
