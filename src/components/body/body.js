@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import './body.css'
 
@@ -15,7 +16,13 @@ export const BodyWrapper = (props) =>{
     allMdx {
       nodes {
         frontmatter{
-          title
+          title,
+          date,
+          hero_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
         id
       }
@@ -24,20 +31,15 @@ export const BodyWrapper = (props) =>{
 `
 )
 console.log(data.allMdx.nodes)
-const myMap = data.allMdx.nodes.map(x => {
-  return (
-    <div key={x.id}>{x.frontmatter.title}</div>
-  )
-})
+
 
     return(
       
       <div className="bodyWrapper">
 
           <div className="bodyContent">
-            {myMap}
             <About />
-            <Latest />
+            <Latest pageInfo={data.allMdx.nodes}/>
             <History />       
           </div>
           
