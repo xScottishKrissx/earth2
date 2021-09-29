@@ -47,7 +47,7 @@ export default class IndexPage extends React.Component {
 
   handleKeyDown = (ev) => {
     let getForm;
-    console.log(ev)
+
     // To Form - F
     if (ev.keyCode === 70) {
       getForm = document.getElementById("contactForm") 

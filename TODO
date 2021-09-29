@@ -14,7 +14,7 @@ Todo:
     ☐ Create some pages and access them using the MDX method from the tutorial
     ☐ Have as much of the information come using the GraphiQL data calls.
     ✔ create the cool hide while scrolling animation. @done(10:15 - 29/09/21)
-    ☐ Split code into logical components.
+    ✔ Split code into logical components. f@done(13:14 - 29/09/21)
       ✔ Navbar @done(12:23 - 29/09/21)
       ✔ Image @done(12:50 - 29/09/21)
       ✔ Scrolling Body @done(12:50 - 29/09/21)
@@ -56,7 +56,7 @@ Todo:
     Contact Form:
       ✔ Create Contact form @done(10:15 - 29/09/21)
         ☐ Doesn't actually work but still...maybe have it send something somewhere?
-      ☐ Terms and conditions cursor should be a pointer
+      ✔ Terms and conditions cursor should be a pointer @done(13:14 - 29/09/21)
     
     Footer:
       ✔ Create Footer @done(10:18 - 29/09/21)
