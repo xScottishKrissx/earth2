@@ -51,7 +51,7 @@ export default class Latest extends React.Component{
            <Link to={`/blog/${x.slug}`}>
               <div className="column-image">              
                 <GatsbyImage image={getImage(x.frontmatter.hero_image)} alt="" />
-                <span className="overlay" title="open in new tab">
+                <span className="overlay" title="View post">
                   <span className="material-icons">open_in_new</span>
                 </span>
               </div>

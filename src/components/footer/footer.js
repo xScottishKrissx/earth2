@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './footer.css'
+import shenanigans from '../../images/shenanigans.png'
 
 export const Footer = (props) =>{
     
@@ -19,11 +20,11 @@ export const Footer = (props) =>{
             </div>
 
           </div>
-
+          <img src={shenanigans} />
         </div>
 
         <div className="footerBlock"></div>
-
+        
       </>
     )
     

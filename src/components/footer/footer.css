@@ -37,10 +37,29 @@
         }
 
 
+    .footerWrapper img{
+        height: 50px;
+        position: absolute;
+        transform: translateY(130px);
+        animation: shenanigans 30s;
+        /* animation-fill-mode: forwards; */
+        opacity: 0.1;
+    }
 
+    @keyframes shenanigans {
+        0%{
+            transform: translateY(130px);
+        }
+        10%{
+            transform: translateY(70px);
+        }
+        100%{
+            transform: translateY(130px);
+        }
+    }
     .footerBlock{
         background-color: #fff700;
-        height: 50px;
+        height: 75px;
         outline: 1px solid 304152;
         position: relative;        
         z-index: 1;
