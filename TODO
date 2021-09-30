@@ -63,6 +63,7 @@ Todo:
           ✔ Functionality in, now to style. @done(12:02 - 30/09/21)
         ☐ Fill out the 3 remaining posts
         ☐ rename the blog -> page
+        ☐ images are a bit jumpy on load.
       
       History:
         ✔ Space out elements a bit @done(10:36 - 29/09/21)
@@ -78,7 +79,10 @@ Todo:
       ✔ shenanigans @done(12:38 - 30/09/21)
       ✔ Added scroll to top button @done(13:09 - 30/09/21)
     
-  Daily Goals:
+  Deployment Issues:
+    0.21 :
+      ✔ Build - No issues @done(13:12 - 30/09/21)
+      ✔ Deployed - No Issues @done(13:12 - 30/09/21)
     
 
           

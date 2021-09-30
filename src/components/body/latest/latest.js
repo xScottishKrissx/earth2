@@ -16,10 +16,10 @@ export default class Latest extends React.Component{
     }
   }
   
-  loadMore(){
+  loadMore(currentEndPoint,numberToLoad){
 
-    if(this.state.endSlice <= 3){
-      this.setState({ endSlice: this.state.endSlice + 3 })
+    if(currentEndPoint <= 3){
+      this.setState({ endSlice: currentEndPoint + numberToLoad })
     }else{
       this.setState({ endOfArticlesMessage: true  })
     }
@@ -27,15 +27,11 @@ export default class Latest extends React.Component{
   }
 
   hideLoad(){
-    this.setState({
-      endSlice:3,
-      endOfArticlesMessage:false
-
-    })
+    this.setState({ endSlice:3, endOfArticlesMessage:false })
   }
 
   render(){
-
+    console.log(this.props.pageInfo.length)
     const articles = this.state.newsArray.slice(this.state.startSlice,this.state.endSlice)
 
     return(
@@ -57,12 +53,7 @@ export default class Latest extends React.Component{
               </div>
         
               <span className="latestNewsDate">{x.frontmatter.date}</span>
-              <div className="latestNewsTitle">
-              <h3>{x.frontmatter.title}</h3>
-                {/* <Link to={`/blog/${x.slug}`}>
-                  <h3>{x.frontmatter.title}</h3>
-                </Link> */}
-              </div>
+              <div className="latestNewsTitle"><h3>{x.frontmatter.title}</h3></div>
             </Link>
 
             </div>      
@@ -86,7 +77,7 @@ export default class Latest extends React.Component{
 
           : 
           
-          <div onClick={()=>this.loadMore()} role="button" onKeyUp={()=>this.loadMore()} tabIndex={0}>
+          <div onClick={()=>this.loadMore(this.state.endSlice,3)} role="button" onKeyUp={()=>this.loadMore()} tabIndex={0}>
             <span className="material-icons">add</span>
             <button > <span>show more posts</span></button>
           </div>
