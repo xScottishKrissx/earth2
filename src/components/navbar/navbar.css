@@ -27,8 +27,8 @@
             /* background-color: #304152; */
             cursor: pointer;
             outline: 1px solid white;
-            padding-left: 35px;
-            padding-right: 35px;
+            padding-left: 5px;
+            padding-right: 5px;
             padding-bottom: 12px;
             padding-top: 12px;
             transition: 0.25s ease-in;
@@ -46,3 +46,15 @@
         .navBarWrapper > nav > span > a:visited {
             color: white;
         }
+
+@media (min-width: 700px) { 
+
+
+    .navBarWrapper > nav > span{
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+}
