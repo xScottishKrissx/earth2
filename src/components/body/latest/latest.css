@@ -9,9 +9,11 @@
 .latestWrapper{
     display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
 }
 
 .column{
+    padding-bottom: 21px;
     width: 100%;
 }
     .column-image > img{
@@ -25,6 +27,24 @@
         .column-image > div > div{ 
             min-height: 250px;
         }
+        .latestNewsDate{
+            color: grey;
+            font-size: 14px;
+        }
+        
+        .latestNewsTitle {
+            color: black;
+            font-size: 24px;
+            padding-top: 5px;   
+            padding-bottom: 10px;
+            text-decoration: none;
+        }
+
+            .latestNewsTitle > a,
+            .latestNewsTitle > a:visited {
+                color: black;
+                text-decoration: none;
+            }
 
         .overlay{
             background-color: rgb(0 0 0 / 25%);
@@ -42,7 +62,7 @@
             opacity: 0;
             z-index: 10;
         }
-            .overlay:hover{
+            .column:hover .overlay{
                 animation: showOverlay 1s;
                 animation-fill-mode: forwards;
             }

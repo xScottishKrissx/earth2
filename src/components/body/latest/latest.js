@@ -1,64 +1,76 @@
 import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby';
 import { Link  } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-
-
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import './latest.css'
 
-export const Latest = (props) =>{
-    
+export default class Latest extends React.Component{
 
-console.log(props.pageInfo.slice(0,3))
+    constructor(props){
+    super(props);
+    this.state = {
+        newsArray:this.props.pageInfo,
+        startSlice:0,
+        endSlice:3,
+        endOfArticlesMessage:false
 
-// const image = getImage(props.pageInfo.frontmatter.hero_image)
-
-
-// I think this will need to become a state component in order to update the page on button click.
-let array1 = props.pageInfo.slice(0,3)
-let array2 = props.pageInfo.slice(3,6)
-
-console.log(array1)
-console.log(array2)
-
-
-return(
-    <div className="latest">
-    <h2>Latest News</h2>
-    <div className="latestWrapper">
-
-    {
-      array1.map(x => (
-
-          <div className="column" key={x.id}> 
-          <div>     
-         
-      
-            <div className="column-image">              
-              <GatsbyImage image={getImage(x.frontmatter.hero_image)} alt="" />
-              <span className="overlay">Overlay</span>
-            </div>
-      
-            <span>{x.frontmatter.date}</span>
-            <div><Link to={`/blog/${x.slug}`}>{x.frontmatter.title}</Link></div>
-
-            
-           {/* <MDXRenderer>{x.body}</MDXRenderer>  */}
-            
-      
-          </div>             
-        </div>
-        
-      ))
-    
     }
-    
+  }
+  
+  loadMore(){
+
+    if(this.state.endSlice <= 3){
+      this.setState({ endSlice: this.state.endSlice + 3 })
+    }else{
+      this.setState({ endOfArticlesMessage: true  })
+    }
+
+  }
+
+  render(){
+
+    const articles = this.state.newsArray.slice(this.state.startSlice,this.state.endSlice)
+
+    return(
+      <div className="latest">
+      <h2>Latest News</h2>
+      <div className="latestWrapper">
+  
+      {
+        articles.map(x => (
+  
+            <div className="column" key={x.id}> 
+            <div>     
+           
+              <div className="column-image">              
+                <GatsbyImage image={getImage(x.frontmatter.hero_image)} alt="" />
+                <span className="overlay">Overlay</span>
+              </div>
+        
+              <span className="latestNewsDate">{x.frontmatter.date}</span>
+              <div className="latestNewsTitle"><Link to={`/blog/${x.slug}`}>{x.frontmatter.title}</Link></div>
+
+            </div>             
+          </div>
+          
+        ))
+      
+      }
+      
+      </div>
+      
+      <div className="endOfArticlesMessage">
+        
+        {this.state.endOfArticlesMessage === true ? 
+            <span>No more news, check back later</span> 
+          : 
+            <button onClick={()=>this.loadMore()}>Load More</button>
+        }
+
+      </div>
+
+      
+
     </div>
-    <button>Load More</button>
-  </div>
-)
-
+  )
+  }
 }
-
-export default Latest;
