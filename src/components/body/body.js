@@ -1,13 +1,12 @@
 import * as React from 'react'
 
 import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
 
 import './body.css'
 
 import About from './about/about'
 import Latest from './latest/latest'
-import History from './history/history'
 
 export const BodyWrapper = (props) =>{
 
@@ -42,7 +41,6 @@ console.log(data.allMdx.nodes)
           <div className="bodyContent">
             <About />
             <Latest pageInfo={data.allMdx.nodes}/>
-            <History />       
           </div>
           
       </div>

@@ -10,7 +10,7 @@ export const NavBar = (props) =>{
 
               <nav>
 
-                <h1><Link to="/#topOfPage" >Earth 2</Link></h1>
+                <h1><Link to="/" >Earth 2</Link></h1>
                 {props.scrollToForm ? 
                   <span tabIndex={0} role="button" onClick={props.scrollToForm} onKeyDown={props.handleKeyDown}>Reserve your place</span> 
                 : 

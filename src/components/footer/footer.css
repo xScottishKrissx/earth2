@@ -40,7 +40,7 @@
     .footerWrapper img{
         height: 50px;
         position: absolute;
-        transform: translateY(130px);
+        transform: translateY(140px);
         animation: shenanigans 30s;
         /* animation-fill-mode: forwards; */
         opacity: 0.1;
@@ -48,23 +48,30 @@
 
     @keyframes shenanigans {
         0%{
-            transform: translateY(130px);
+            transform: translateY(140px);
         }
         10%{
             transform: translateY(70px);
         }
         100%{
-            transform: translateY(130px);
+            transform: translateY(140px);
         }
     }
     .footerBlock{
         background-color: #fff700;
+        display: flex;
+            align-items: center;
+            justify-content: center;
         height: 75px;
         outline: 1px solid 304152;
         position: relative;        
         z-index: 1;
     }
-
+    .footerBlock > span{
+        color: #304152;
+        cursor: pointer;
+        font-size: 50px;
+    }
 
 @media (min-width: 700px) { 
 

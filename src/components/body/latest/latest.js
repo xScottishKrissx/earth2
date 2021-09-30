@@ -79,15 +79,15 @@ export default class Latest extends React.Component{
         
         {this.state.endOfArticlesMessage === true ? 
           
-          <div onClick={()=>this.hideLoad()}>
+          <div onClick={()=>this.hideLoad()} onKeyUp={()=>this.hideLoad()} role="button" tabIndex={0}>
             <span id="showMoreIcon" class="material-icons">add</span>
             <button > <span>No more posts</span></button>
           </div>
 
           : 
           
-          <div onClick={()=>this.loadMore()}>
-            <span class="material-icons">add</span>
+          <div onClick={()=>this.loadMore()} role="button" onKeyUp={()=>this.loadMore()} tabIndex={0}>
+            <span className="material-icons">add</span>
             <button > <span>show more posts</span></button>
           </div>
 

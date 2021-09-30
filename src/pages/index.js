@@ -35,6 +35,7 @@ export default class IndexPage extends React.Component {
     if (this.state.isBrowser){ 
       window.addEventListener("scroll",this.scroll)
       document.addEventListener("keyup", this.handleKeyDown, false);  
+      window.scrollTo(0,0)
     }
 
   }
@@ -95,7 +96,7 @@ export default class IndexPage extends React.Component {
   }
 
   render(){
-    
+      if(this.state.isBrowser)window.scrollTo(0,0)
       return (
 
           <main className="mainWrapper" id="topOfPage">
@@ -104,7 +105,7 @@ export default class IndexPage extends React.Component {
             <FixedImage scrollPos={this.state.scrollPos} />
             <BodyWrapper />
             <ContactForm />
-            <Footer />
+            <Footer isBrowser={this.state.isBrowser}/>
 
             
       

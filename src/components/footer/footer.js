@@ -3,7 +3,18 @@ import './footer.css'
 import shenanigans from '../../images/shenanigans.png'
 
 export const Footer = (props) =>{
-    
+
+    function scrollTop(){
+      if(props.isBrowser){
+        window.scrollTo({
+          top:0,
+          left:0,
+          behavior:"smooth"
+        })
+      }else;
+
+    }
+
     return(
       <>
         <div className="footerWrapper">
@@ -12,18 +23,21 @@ export const Footer = (props) =>{
             
             <div id="footerLeft">
               <h1>Earth 2</h1> 
-              <span>| a new adventure</span>
+              <span>| adventure awaits</span>
             </div>
 
             <div id="footerRight">
               <p>For more information: <br/> <span>earth2@human.gov</span></p>
             </div>
-
+            
           </div>
-          <img src={shenanigans} />
+          <img src={shenanigans} alt="kfsvaisefnoskvnovbosdjajsbgbsdbv" />
+          
         </div>
 
-        <div className="footerBlock"></div>
+        <div role="button" tabIndex={0} className="footerBlock" onClick={()=>scrollTop()} onKeyDown={()=>scrollTop()}>
+          <span className="material-icons" title="scroll to top of page">keyboard_capslock</span>
+        </div>
         
       </>
     )
