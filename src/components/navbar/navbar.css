@@ -21,7 +21,7 @@
 
     /* Left */
         .mainLogoArea > a > h1{
-            font-size: 3rem;
+            font-size: 2rem;
         }
         .mainLogoArea > a > h1 > a,
         .mainLogoArea > a > h1 > a:visited{
@@ -36,7 +36,7 @@
             text-decoration: none;
         }
         .mainLogoArea > a > img {
-            height: 75px;
+            height: 50px;
             padding-right: 20px;
         }
 
@@ -75,6 +75,13 @@
         padding-right: 35px;
         padding-bottom: 12px;
         padding-top: 12px;
+    }
+
+    .mainLogoArea > a > img {
+        height: 75px;
+    }
+    .mainLogoArea > a > h1{
+        font-size: 3rem;
     }
 
 }

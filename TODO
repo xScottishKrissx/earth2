@@ -37,7 +37,7 @@ Todo:
         ✔ F - Goes to form @done(11:19 - 29/09/21)
         ✔ T - Scrolls to top of page @done(11:18 - 29/09/21)
       ✔ Replaced anchor with window.scrollto @done(13:09 - 30/09/21)
-      ☐ Add the earth2.0 icon
+      ✔ Add the earth2.0 icon @done(15:45 - 30/09/21)
 
     Navbar:
       ✔ Set as transparent @done(10:15 - 29/09/21)

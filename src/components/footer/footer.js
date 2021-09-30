@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './footer.css'
 import shenanigans from '../../images/shenanigans.png'
-
+import earth2Icon from '../../images/ico.png'
 export const Footer = (props) =>{
 
     function scrollTop(){
@@ -22,7 +22,8 @@ export const Footer = (props) =>{
           <div className="footerContent">
             
             <div id="footerLeft">
-              <h1>Earth 2</h1> 
+              {/* <h1>Earth 2</h1>  */}
+              <img src={earth2Icon} />
               <span>| adventure awaits</span>
             </div>
 
@@ -31,7 +32,7 @@ export const Footer = (props) =>{
             </div>
             
           </div>
-          <img src={shenanigans} alt="kfsvaisefnoskvnovbosdjajsbgbsdbv" />
+          <img id="shenanigans" src={shenanigans} alt="kfsvaisefnoskvnovbosdjajsbgbsdbv" />
           
         </div>
 
