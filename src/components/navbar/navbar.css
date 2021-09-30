@@ -17,12 +17,32 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-        .navBarWrapper > nav > h1{
+
+
+    /* Left */
+        .mainLogoArea > a > h1{
             font-size: 3rem;
         }
-        .navBarWrapper > nav > h1 > a:visited{
+        .mainLogoArea > a > h1 > a,
+        .mainLogoArea > a > h1 > a:visited{
             color: white;
+            text-decoration: none;
         }
+
+        .mainLogoArea > a{
+            display: flex;
+                align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+        .mainLogoArea > a > img {
+            height: 75px;
+            padding-right: 20px;
+        }
+
+
+
+        /* Right */
         .navBarWrapper > nav > span{
             /* background-color: #304152; */
             cursor: pointer;

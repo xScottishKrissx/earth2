@@ -15,8 +15,8 @@ Gatsby
 Todo:
 
   Goals:
-    ☐ Create some pages and access them using the MDX method from the tutorial
-    ☐ Have as much of the information come using the GraphiQL data calls.
+    ✔ Create some pages and access them using the MDX method from the tutorial @done(15:17 - 30/09/21)
+    ✔ Have as much of the information come using the GraphiQL data calls. @done(15:17 - 30/09/21)
     ✔ create the cool hide while scrolling animation. @done(10:15 - 29/09/21)
     ✔ Split code into logical components. f@done(13:14 - 29/09/21)
       ✔ Navbar @done(12:23 - 29/09/21)
@@ -37,13 +37,15 @@ Todo:
         ✔ F - Goes to form @done(11:19 - 29/09/21)
         ✔ T - Scrolls to top of page @done(11:18 - 29/09/21)
       ✔ Replaced anchor with window.scrollto @done(13:09 - 30/09/21)
+      ☐ Add the earth2.0 icon
 
     Navbar:
       ✔ Set as transparent @done(10:15 - 29/09/21)
       ✔ Format page header @done(10:15 - 29/09/21)
       ✔ Format Button @done(10:15 - 29/09/21)
         ✔ Should scroll to contact form @done(10:53 - 29/09/21)
-      ☐ On Mobile, the 2 elements are too close together
+      ✔ On Mobile, the 2 elements are too close together @done(14:46 - 30/09/21)
+      ✔ On mobile, the post page form button doesnt go to the form @done(15:17 - 30/09/21)
       
     Fixed Image:
       ✔ Banner Text @done(10:15 - 29/09/21)
@@ -52,7 +54,7 @@ Todo:
       ✔ Improve appearance of text, it's too narrow on smaller window width @done(10:31 - 29/09/21)
       
       Latest News:
-        ☐ Create 3 Pages using mdx system from tutorial
+        ✔ Create 3 Pages using mdx system from tutorial @done(15:17 - 30/09/21)
           ✔ I have the latest news tiles generated from the blog... @done(13:10 - 30/09/21)
             ✔ ...now to get working pages. @done(16:24 - 29/09/21)
             ✔ Pages in place, now to style them. @done(17:39 - 29/09/21)
@@ -62,9 +64,9 @@ Todo:
         ✔ Have a go at the load more news button(after the look is in place, this should just updating an array) @done(13:10 - 30/09/21)
           ✔ I think this will require a stateful component to work @done(10:38 - 30/09/21)
           ✔ Functionality in, now to style. @done(12:02 - 30/09/21)
-        ☐ Fill out the 3 remaining posts
-        ☐ rename the blog -> page
-        ☐ images are a bit jumpy on load.
+        ✔ Fill out the 3 remaining posts @done(15:17 - 30/09/21)
+        ✘ rename the blog -> page @cancelled(15:17 - 30/09/21)
+        ✘ images are a bit jumpy on load. @cancelled(15:17 - 30/09/21)
       
       History:
         ✔ Space out elements a bit @done(10:36 - 29/09/21)
