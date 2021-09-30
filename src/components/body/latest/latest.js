@@ -26,6 +26,14 @@ export default class Latest extends React.Component{
 
   }
 
+  hideLoad(){
+    this.setState({
+      endSlice:3,
+      endOfArticlesMessage:false
+
+    })
+  }
+
   render(){
 
     const articles = this.state.newsArray.slice(this.state.startSlice,this.state.endSlice)
@@ -40,16 +48,25 @@ export default class Latest extends React.Component{
   
             <div className="column" key={x.id}> 
             <div>     
-           
+           <Link to={`/blog/${x.slug}`}>
               <div className="column-image">              
                 <GatsbyImage image={getImage(x.frontmatter.hero_image)} alt="" />
-                <span className="overlay">Overlay</span>
+                <span className="overlay" title="open in new tab">
+                  <span className="material-icons">open_in_new</span>
+                </span>
               </div>
         
               <span className="latestNewsDate">{x.frontmatter.date}</span>
-              <div className="latestNewsTitle"><Link to={`/blog/${x.slug}`}>{x.frontmatter.title}</Link></div>
+              <div className="latestNewsTitle">
+              <h3>{x.frontmatter.title}</h3>
+                {/* <Link to={`/blog/${x.slug}`}>
+                  <h3>{x.frontmatter.title}</h3>
+                </Link> */}
+              </div>
+            </Link>
 
-            </div>             
+            </div>      
+              
           </div>
           
         ))
@@ -57,13 +74,24 @@ export default class Latest extends React.Component{
       }
       
       </div>
-      
+
       <div className="endOfArticlesMessage">
         
         {this.state.endOfArticlesMessage === true ? 
-            <span>No more news, check back later</span> 
+          
+          <div onClick={()=>this.hideLoad()}>
+            <span id="showMoreIcon" class="material-icons">add</span>
+            <button > <span>No more posts</span></button>
+          </div>
+
           : 
-            <button onClick={()=>this.loadMore()}>Load More</button>
+          
+          <div onClick={()=>this.loadMore()}>
+            <span class="material-icons">add</span>
+            <button > <span>show more posts</span></button>
+          </div>
+
+           
         }
 
       </div>

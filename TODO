@@ -59,7 +59,9 @@ Todo:
         ✔ There's a small grey line when activating the overlay @done(10:35 - 29/09/21)
         ☐ Have a go at the load more news button(after the look is in place, this should just updating an array)
           ✔ I think this will require a stateful component to work @done(10:38 - 30/09/21)
-          ☐ Functionality in, now to style.
+          ✔ Functionality in, now to style. @done(12:02 - 30/09/21)
+        ☐ Fill out the 3 remaining posts
+        ☐ rename the blog -> page
       
       History:
         ✔ Space out elements a bit @done(10:36 - 29/09/21)

@@ -15,7 +15,25 @@
 .column{
     padding-bottom: 21px;
     width: 100%;
+
+    animation: aniColumn 1s;
+    animation-fill-mode: forwards;
 }
+.column:hover{
+    outline: 1px solid #30415208;
+}
+
+    @keyframes aniColumn{
+        0%{
+            transform: translate(10px, 20px);
+        }
+        100%{
+            transform: translate(10px, 10px);
+        }
+    }
+    .column > div > a {
+        text-decoration: none !important;
+    }
     .column-image > img{
         width: 100%;
         z-index: 1;
@@ -45,6 +63,10 @@
                 color: black;
                 text-decoration: none;
             }
+            .latestNewsTitle > h3{
+                padding: 0;
+                margin: 0;
+            }
 
         .overlay{
             background-color: rgb(0 0 0 / 25%);
@@ -62,10 +84,53 @@
             opacity: 0;
             z-index: 10;
         }
+        .overlay > span { 
+            font-size: 4rem;
+            opacity: 0.75;
+        }
             .column:hover .overlay{
                 animation: showOverlay 1s;
                 animation-fill-mode: forwards;
             }
+
+            .endOfArticlesMessage > div{
+                cursor: pointer;
+                color: grey;
+                display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                opacity: 0.5;
+               padding-top: 50px;
+               padding-bottom: 50px;
+            }
+            .endOfArticlesMessage > div > span{
+                font-size: 50px;
+            }
+            .endOfArticlesMessage > div > button {
+                border: none;
+                cursor: inherit;
+                color: inherit;
+                background-color: white;
+                font-size: 20px;
+                padding: 0;
+            }
+
+
+            #showMoreIcon{
+                animation: rotateIcon 1s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes rotateIcon {
+                0%{
+                  transform: rotate(0);  
+                }
+                100%{
+                    transform: rotate(45deg);
+                }
+            }
+
             @keyframes showOverlay {
                 0%{
                     opacity: 0;
